@@ -13,8 +13,8 @@ const firebaseConfig = {
   projectId: "elessar-portfolio",
   storageBucket: "elessar-portfolio.appspot.com",
   messagingSenderId: "824367513657",
-  appId: "1:824367513657:web:cbeb6a7430d15d3cda8de8",
-  measurementId: "G-NY9DMDDPX4",
+  appId: "1:824367513657:web:10b1de3aaaf001ecda8de8",
+  measurementId: "G-GZPFQD887L",
 };
 
 // Initialize Firebase
