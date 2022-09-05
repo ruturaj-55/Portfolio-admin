@@ -43,6 +43,8 @@ const PostForm = () => {
         formDataObj["cover-image"],
       Images: images,
       Description: formDataObj["description"],
+      References: formDataObj["references"],
+      StudyImage: formDataObj["study-image"],
       CapturedOn: date.getTime() / 1000,
       PostedOn: Timestamp.now()["seconds"],
     };
@@ -124,6 +126,21 @@ const PostForm = () => {
           </Row>
         </Form.Group>
 
+        <Form.Group className="mb-5" controlId="study-image">
+          <Row>
+            <Col>
+              <Form.Label>Study Image</Form.Label>
+            </Col>
+            <Col>
+              <Form.Control
+                name="study-image"
+                type="string"
+                placeholder="Enter URL for Study Image"
+              />
+            </Col>
+          </Row>
+        </Form.Group>
+
         <Form.Group className="mb-5" controlId="images">
           <Row>
             <Col>
@@ -141,7 +158,18 @@ const PostForm = () => {
               <Form.Label>Description</Form.Label>
             </Col>
             <Col>
-              <Form.Control name="description" as="textarea" rows={10} />
+              <Form.Control name="description" as="textarea" rows={50} />
+            </Col>
+          </Row>
+        </Form.Group>
+
+        <Form.Group className="mb-5" controlId="references">
+          <Row>
+            <Col>
+              <Form.Label>References</Form.Label>
+            </Col>
+            <Col>
+              <Form.Control name="references" as="textarea" rows={10} />
             </Col>
           </Row>
         </Form.Group>
