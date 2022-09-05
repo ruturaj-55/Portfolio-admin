@@ -44,7 +44,9 @@ const PostForm = () => {
       Images: images,
       Description: formDataObj["description"],
       References: formDataObj["references"],
-      StudyImage: formDataObj["study-image"],
+      StudyImage:
+        "https://drive.google.com/uc?export=view&id=" +
+        formDataObj["study-image"],
       CapturedOn: date.getTime() / 1000,
       PostedOn: Timestamp.now()["seconds"],
     };
