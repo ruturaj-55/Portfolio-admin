@@ -43,7 +43,7 @@ const PostForm = () => {
         formDataObj["cover-image"],
       Images: images,
       Description: formDataObj["description"],
-      References: formDataObj["references"],
+      References: formDataObj["references"].split(","),
       StudyImage:
         "https://drive.google.com/uc?export=view&id=" +
         formDataObj["study-image"],
