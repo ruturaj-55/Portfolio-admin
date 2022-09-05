@@ -35,6 +35,8 @@ const PostForm = () => {
       (element) => "https://drive.google.com/uc?export=view&id=" + element
     );
 
+    const references = formDataObj["references"].split(",");
+
     const data = {
       Name: formDataObj["shot-name"],
       About: formDataObj["about-shot"],
@@ -43,7 +45,7 @@ const PostForm = () => {
         formDataObj["cover-image"],
       Images: images,
       Description: formDataObj["description"],
-      References: formDataObj["references"].split(","),
+      References: references,
       StudyImage:
         "https://drive.google.com/uc?export=view&id=" +
         formDataObj["study-image"],
